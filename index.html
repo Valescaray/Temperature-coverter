@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class=" header">
+        <img src="C:\Temperature converter\img\calculator-svgrepo-com (1).svg" height="60px" width="60px">
+        <h3>INCH CALCULATOR</h3>
+
+
+        <div id="sideNavigation" class="sidenav">
+            <a href="#" class="close-btn">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+
+
+        <nav class="topnav">
+            <a href="#" class="ham-icon">
+                <svg width="30" height="30" id="icoOpen">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+                </svg>
+            </a>
+        </nav>
+
+    </div>
+
+    <section id="main">
+        <h3>TEMPERATURE CONVERTER</h3>
+        <P id="reverse1">Enter the temperature in fahrenheit below to get value converted to celsius:</P>
+
+        <div class="converter">
+            <h1 id="reverse2">Degrees fahrenheit</h1>
+            <form class="number-form">
+                <input type="text" id="number1" class="screen-1"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+            </form>
+
+            <div class="conv-swap">
+
+                <div class="style convert">
+                    CONVERT
+                </div>
+
+                <div class="style swap">
+                    SWAP UNITS
+                </div>
+
+
+            </div>
+
+            <div class="converter-2">
+                <h1 id="reverse3">Results in Degrees celsius </h1>
+                <form class="number-form2">
+                    <input type="text" id="number2" class="screen-2">
+                </form>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
